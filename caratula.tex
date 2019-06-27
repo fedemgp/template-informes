@@ -1,0 +1,42 @@
+\newcommand{\imgdir}{img}
+\graphicspath{{\imgdir/}}
+\input{informacionGeneral.tex}
+
+\begin{titlepage}
+\centering
+\begin{figure}[t]
+	\centering
+	{\huge  Universidad de Buenos Aires \par}
+	{\huge Facultad de Ingeniería \par}
+	\vspace{0.5cm}
+	\includegraphics[scale=0.3]{fiuba}
+    \vspace{1cm}
+\end{figure}
+	\vspace{1cm}
+	{\huge \bfseries \nombreMateria \LARGE (\codigoMateria) \par}
+	\vspace{1cm}
+    {\textbf{\LARGE Informe \numeroInforme: \nombreInforme}\par}
+    \vspace{2cm}
+    {\underline{\Large INTEGRANTES:}\\}
+    \vspace{0.5cm}
+	{\nombreDos - nº \padronDos- \emph{\mailDos}\\ }
+    \vspace{1cm}
+    {\underline{\Large  DOCENTES:}\\}
+    \vspace{0.5cm}
+	{\Large\itshape  \docentes \par}
+    \vspace{1cm}
+    {\large \fecha \par}
+	\vfill
+\end{titlepage}
+
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhead[C]{\rule{.5\textwidth}{4\baselineskip}}
+\setlength{\headheight}{52pt}
+\renewcommand{\sectionmark}[1]{\markboth{}{\thesection\ \ #1}}
+\lhead{\includegraphics[width= 3 cm]{./logo_fiuba_alta.jpg}}
+\chead{}
+\rhead{\codigoMateria - \nombreMateria}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
